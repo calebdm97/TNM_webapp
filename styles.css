@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+
+header {
+    max-height: 150px;
+    background: lightgrey;
+    z-index: 1;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    padding-right:15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.logo {
+    max-height: 15vh;
+    max-width: 15vh;
+    display: block;
+
+}
+
+.main {
+    display: flex;
+    height:85vh;
+}
+
+.side-panel {
+    background: rgb(167, 167, 167);
+    flex-grow: 1;
+    max-width: 230px;
+    max-height: 100vh;
+    order:1;
+    z-index: 0;
+}
+
+.tabs{
+    display:block;
+    height: 10%;
+    width:100%;
+    border: lightblue dotted;
+    
+}
+
+.legend {
+    display:block;
+    border: lightcoral dotted;
+    height: 75%;
+    width: 100%;
+}
+
+.info {
+    display:block;
+    max-height: 125px;
+    border: yellow dotted;
+    height: 15%;
+    width: 100%;
+}
+
+.map-area {
+    background: green;
+    height: 100%;
+    flex-grow: 2;
+    order:2;
+    z-index: -1;
+}
+
+footer {
+    display: none;
+}
