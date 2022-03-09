@@ -27,7 +27,7 @@ img {
 }
 
 .main {
-    height: 100%;
+    height: calc(100vh - 150px);
 }
 
 .side-panel {
@@ -36,6 +36,15 @@ img {
     max-width: 230px;
     max-height: 100vh;
     order:1;
+}
+
+@media (max-width: 600px) {
+    .side-panel {
+        display: none;
+    }
+    .logo {
+        margin:auto;
+    }
 }
 
 .flex_container {
@@ -86,13 +95,13 @@ img {
 }
 
 .map-area {
-    height: 100%;
+    height: calc(100vh - 150px);
     order: 2;
 }
 
 #map {
-    height: 500px;
-    width: 600px;
+    height: calc(100vh - 150px);
+    width: auto;
 }
 
 footer {
