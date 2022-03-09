@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Custom GIS Test</title>
-        <link rel="stylesheet" type="text/css" href="src/styles.css">
+      <title>Custom GIS Test</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="src/styles.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+      
     </head>
     <body>
         <header>
@@ -13,14 +16,19 @@
           </div>
           <nav></nav>
         </header>
-        <div class="main">
-            <section class="map-area">map area</section>
-            <section class="side-panel">
-                <section class="tabs">tabs</section>
-                <section class="legend">legend</section>
-                <section class="info">info</section>
-            </section>
+        <div class="main flex_container">
+          <div class="map-area flex_item_large">
+            <div id="map">
+                
+            </div>
+          </div>
+          <div class="side-panel flex_item_small">
+            <div class="tabs">tabs</div>
+            <div class="legend">legend</div>
+            <div class="info">info</div>
+          </div>
         </div>
         <footer>hello</footer>
+        <script src="src/index.js"></script>
       </body>
     </html>

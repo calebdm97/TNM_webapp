@@ -6,7 +6,7 @@ body {
 header {
     max-height: 150px;
     background: lightgrey;
-    z-index: 1;
+    display: block;
 }
 
 img {
@@ -27,8 +27,7 @@ img {
 }
 
 .main {
-    display: flex;
-    height:85vh;
+    height: 100%;
 }
 
 .side-panel {
@@ -37,8 +36,31 @@ img {
     max-width: 230px;
     max-height: 100vh;
     order:1;
-    z-index: 0;
 }
+
+.flex_container {
+    display: flex;
+}
+
+.flex_item_large {
+    flex: 75%;
+    order: 2;
+}
+
+.flex_item_small {
+    flex: 25%;
+    order: 1;
+}
+
+@media (max-width: 600px) {
+    .flex_item_large {
+        flex:100%;
+    }
+    .flex_item_small {
+        display: none;
+    }
+}
+
 
 .tabs{
     display:block;
@@ -58,17 +80,19 @@ img {
 .info {
     display:block;
     max-height: 125px;
-    border: yellow dotted;
+    border: rgb(0, 0, 0) dotted;
     height: 15%;
     width: 100%;
 }
 
 .map-area {
-    background: green;
     height: 100%;
-    flex-grow: 2;
-    order:2;
-    z-index: -1;
+    order: 2;
+}
+
+#map {
+    height: 500px;
+    width: 600px;
 }
 
 footer {
