@@ -6,7 +6,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiY2FsZWJkbTk3IiwiYSI6ImNsMGlzZGE3aDA1cDEzZW9hOTgyZmN2ankifQ.LkvQomkGIp9FvpAkONBLog'
+    accessToken: 'pk.eyJ1IjoiY2FsZWJkbTk3IiwiYSI6ImNsYTZlM2g2YzBxcmszb3JuaGFmNmQ2aHAifQ.gN8FEa-IARFeqzfHayKkKQ'
 }).addTo(map);
 
 var popup = L.popup();
